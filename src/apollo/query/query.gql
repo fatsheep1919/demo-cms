@@ -1,0 +1,28 @@
+query Site($locale: String!) {
+  siteCollection(limit: 1, locale: $locale) {
+    items {
+      slogan
+      blogListTxt
+    }
+  }
+}
+
+query Blogs($locale: String!, $order: [BlogOrder]) {
+  blogCollection(locale: $locale, order: $order) {
+    items {
+      sys {
+        id
+        publishedAt
+      }
+      title
+      image
+    }
+  }
+}
+
+query Blog($locale: String!, $id: String!) {
+  blog(locale: $locale, id: $id) {
+    title
+    image
+  }
+}
