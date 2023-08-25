@@ -32,7 +32,7 @@ with graphql-request wrapped under the hood to send the real requests.
 
 In graphql.schema.json, the types for the graphql schema and operations of [Contentful](https://www.contentful.com/) will be generated,
 
-ant be used when the graphql apis work.
+and be used when the graphql apis work.
 
 
 
